@@ -1,0 +1,174 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-container .logo-container .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #7a7a7a;
+}
+
+/* Estilo da barra de busca */
+.main-search {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #5a5a5a;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: white;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.search-form i {
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+/* Seção de serviços */
+.Lançamentos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.Lançamentos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.Lançamentos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.Lançamento {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Lançamento:hover {
+    transform: translateY(-10px);
+}
+
+.Lançamento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Lançamento h3{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.Lançamento p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-form {
+        width: 90%;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
